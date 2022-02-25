@@ -1,0 +1,23 @@
+PROGRAMME:
+n=int(input('enter n: '))
+l=[]
+t=[]
+for i in range(n):
+    x=int(input('enter x: '))
+    l.append(x)
+for i in range(n):
+    if l[i]>0:
+        t.append(l[i])
+for i in range(n):
+    if l[i]<0:
+        t.append(l[i])
+print('negative number: ',t)
+OUTPUT:
+enter n: 5
+enter x: 1
+enter x: -2
+enter x: 3
+enter x: -4
+enter x: 5
+negative number:  [1, 3, 5, -2, -4]
+
